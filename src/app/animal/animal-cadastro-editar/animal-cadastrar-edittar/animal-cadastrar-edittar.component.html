@@ -1,4 +1,4 @@
-<h2>{{ animal && animal.id ? 'Editar' : 'Cadastrar'}}</h2>
+<h2>{{ (animal && animal.id ? 'Editar' : 'Cadastrar')}}</h2>
 
 <div class="componente-container">
     <form class="form-padrao" *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="formGroup.valid &&salvar()" novalidate>

@@ -9,7 +9,7 @@ const routes: Routes = [
     loadChildren: () => import('./animais/animal-lista/animal-lista.module').then(m => m.AnimalListaModule)
   },
   {
-    path: 'animal/cadastrar',
+    path: 'animais/cadastrar',
     loadChildren: () => import('./animal/animal-cadastro-editar/animal-cadastro-editar.module').then(m => m.AnimalCadastroEditarModule)
   },
   {

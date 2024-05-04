@@ -37,8 +37,21 @@ export class AnimalService {
   }
 
   atualizar(animal: animal): Observable<animal> {
-    return this.httpClient.put<animal>(`${this.baseURL}/${this.endpoint}/${animal.id}`, animal)
+    const capitalizeFirstLetter = (str: string) => {
+      return str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+    };
+
+    const animalComCamposCapitalizados: animal = {
+      id: animal.id,
+      nome: capitalizeFirstLetter(animal.nome),
+      idade: animal.idade,
+      tipo: capitalizeFirstLetter(animal.tipo),
+      cor: capitalizeFirstLetter(animal.cor)
+    };
+
+    return this.httpClient.put<animal>(`${this.baseURL}/${this.endpoint}/${animal.id}`, animalComCamposCapitalizados);
   }
+
 
   deletar(animal: animal): Observable<{}> {
     return this.httpClient.delete<animal>(`${this.baseURL}/${this.endpoint}/${animal.id}`)

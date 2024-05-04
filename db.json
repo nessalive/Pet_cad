@@ -1,13 +1,6 @@
 {
   "animal": [
     {
-      "id": "1",
-      "nome": "Hanaaa",
-      "idade": 5,
-      "tipo": "Cachorro",
-      "cor": "Preta"
-    },
-    {
       "id": "2",
       "nome": "Whiskers",
       "idade": 3,
@@ -53,8 +46,8 @@
       "id": "c0fa",
       "nome": "Vanessa2",
       "idade": "25",
-      "tipo": "linda",
-      "cor": "Papelão"
+      "tipo": "Borboleta",
+      "cor": "PapelãO"
     },
     {
       "id": "eda5",
@@ -62,13 +55,6 @@
       "idade": "26",
       "tipo": "Urso",
       "cor": "Cinza"
-    },
-    {
-      "id": "1",
-      "nome": "Hanaaa",
-      "idade": 5,
-      "tipo": "Cachorro",
-      "cor": "Preta"
     }
   ]
 }

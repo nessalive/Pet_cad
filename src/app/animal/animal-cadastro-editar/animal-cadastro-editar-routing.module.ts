@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AnimalCadastrarEdittarComponent } from './animal-cadastrar-edittar/animal-cadastrar-edittar.component';
+import { AnimalResolverService } from './animal-resolver.service';
 
 
 const routes: Routes = [
-  { path: "animais/cadastrar", component: AnimalCadastrarEdittarComponent },
-  { path: "animais/:id", component: AnimalCadastrarEdittarComponent } 
+  { path: "", component: AnimalCadastrarEdittarComponent,
+    resolve: {animal : AnimalResolverService}
+   },
+  { path: "animal/cadastrar", component: AnimalCadastrarEdittarComponent}
 ];
 
 @NgModule({
