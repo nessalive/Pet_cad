@@ -1,0 +1,74 @@
+{
+  "animal": [
+    {
+      "id": "1",
+      "nome": "Hanaaa",
+      "idade": 5,
+      "tipo": "Cachorro",
+      "cor": "Preta"
+    },
+    {
+      "id": "2",
+      "nome": "Whiskers",
+      "idade": 3,
+      "tipo": "Gato",
+      "cor": "Preto e branco"
+    },
+    {
+      "id": "3",
+      "nome": "Tweety",
+      "idade": 2,
+      "tipo": "Pássaro",
+      "cor": "Amarelo"
+    },
+    {
+      "id": "4",
+      "nome": "Nibbles",
+      "idade": 1,
+      "tipo": "Coelho",
+      "cor": "Branco"
+    },
+    {
+      "id": "5",
+      "nome": "Buddy",
+      "idade": 4,
+      "tipo": "Cachorro",
+      "cor": "Branco e preto"
+    },
+    {
+      "id": "248d",
+      "nome": "candy",
+      "idade": "7",
+      "tipo": "cachorro",
+      "cor": "verde"
+    },
+    {
+      "id": "e9e2",
+      "nome": "vanessa",
+      "idade": "5",
+      "tipo": "tartaruga",
+      "cor": "Verde com pintinha marrom"
+    },
+    {
+      "id": "c0fa",
+      "nome": "Vanessa2",
+      "idade": "25",
+      "tipo": "linda",
+      "cor": "Papelão"
+    },
+    {
+      "id": "eda5",
+      "nome": "Candy",
+      "idade": "26",
+      "tipo": "Urso",
+      "cor": "Cinza"
+    },
+    {
+      "id": "1",
+      "nome": "Hanaaa",
+      "idade": 5,
+      "tipo": "Cachorro",
+      "cor": "Preta"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<h2>{{ animal && animal.id ? 'Editar' : 'Cadastrar'}}</h2>
+
+<div class="componente-container">
+    <form class="form-padrao" *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="formGroup.valid &&salvar()" novalidate>
+        <mat-form-field>
+            <input matInput placeholder="Nome" formControlName="nome" required="">
+            <mat-error>Nome obrigatório</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Idade" formControlName="idade" required="">
+            <mat-error>Idade obrigatória</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Tipo" formControlName="tipo" required="">
+            <mat-error>Tipo obrigatório</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput placeholder="Cor" formControlName="cor" required="">
+            <mat-error>Cor obrigatória</mat-error>
+        </mat-form-field>
+        <br>
+        <div class="linha-botoes">
+            <button mat-button [disabled]="!formGroup.valid" >Salvar</button>
+            <button type="button" mat-raised-button routerLink="/animais">Cancelar</button>
+            <button *ngIf="animal && animal.id" type="button" mat-raised-button color="warn" (click)="deletar()">Deletar</button>
+        </div>
+    </form>
+</div>
