@@ -18,7 +18,7 @@
       "id": "3",
       "nome": "Tweety",
       "idade": 2,
-      "tipo": "Pássaro",
+      "tipo": "Passaro",
       "cor": "Amarelo"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "id": "c0fa",
-      "nome": "Vanessa2",
+      "nome": "Nessa",
       "idade": "25",
       "tipo": "Borboleta",
       "cor": "PapelãO"

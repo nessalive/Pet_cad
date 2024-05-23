@@ -8,7 +8,9 @@ const routes: Routes = [
   { path: "", component: AnimalCadastrarEdittarComponent,
     resolve: {animal : AnimalResolverService}
    },
-  { path: "animal/cadastrar", component: AnimalCadastrarEdittarComponent}
+  { path: ":id", component: AnimalCadastrarEdittarComponent,
+  resolve: {animal : AnimalResolverService}
+  }
 ];
 
 @NgModule({

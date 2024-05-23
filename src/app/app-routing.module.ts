@@ -8,12 +8,12 @@ const routes: Routes = [
     path: 'animais',
     loadChildren: () => import('./animais/animal-lista/animal-lista.module').then(m => m.AnimalListaModule)
   },
+  // {
+  //   path: 'animal/cadastro',
+  //   loadChildren: () => import('./animal/animal-cadastro-editar/animal-cadastro-editar.module').then(m => m.AnimalCadastroEditarModule)
+  // },
   {
-    path: 'animais/cadastrar',
-    loadChildren: () => import('./animal/animal-cadastro-editar/animal-cadastro-editar.module').then(m => m.AnimalCadastroEditarModule)
-  },
-  {
-    path: 'animal/:id',
+    path: 'animal',
     loadChildren: () => import('./animal/animal-cadastro-editar/animal-cadastro-editar.module').then(m => m.AnimalCadastroEditarModule)
   }
 
